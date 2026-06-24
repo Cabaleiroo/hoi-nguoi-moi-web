@@ -141,7 +141,7 @@ nav {
 }
 
 .hero h1 {
-  font-size: 5rem;
+  font-size: 3rem;
 
   margin-bottom: 20px;
 }
@@ -673,5 +673,9 @@ footer {
 @media (max-width: 768px) {
   .hero {
     padding-top: 140px;
+  }
+
+  .hero h1{
+    font-size: 1rem;
   }
 }
