@@ -175,6 +175,8 @@ nav {
   color: white;
 
   transition: all 0.3s ease;
+
+  margin:0 auto;
 }
 
 .discord-btn {
@@ -418,6 +420,10 @@ nav {
   border: 1px solid rgba(255, 255, 255, 0.1);
 
   padding: 25px;
+}
+
+section h2 {
+  margin-bottom: 30px;
 }
 
 .announce-card h2 {
