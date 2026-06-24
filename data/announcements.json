@@ -1,0 +1,25 @@
+[
+    {
+        "title":"Bảo trì server Discord",
+
+        "content":"Server Discord của Hội người mọi sẽ bảo trì trong 2 tiếng bắt đầu từ 21:00 ngày 24/06",
+
+        "date":"2026-06-24T19:00:00",
+
+        "tag":"THƯỜNG",
+
+        "pinned":false
+    },
+
+    {
+        "title":"Tuyển thành viên",
+
+        "content":"Hội người mọi đang tuyển thêm thành viên mới! Vui lòng tham gia server Discord để ứng tuyển",
+
+        "date":"2026-06-25T18:00:00",
+
+        "tag":"TUYỂN DỤNG",
+
+        "pinned":true
+    }
+]

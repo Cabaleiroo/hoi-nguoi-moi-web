@@ -1,0 +1,14 @@
+[
+    {
+        "name":"Cabaleiro",
+        "role":"Founder",
+        "avatar":"assets/members/son.jpg",
+        "description":"Người sáng lập Hội người mọi"
+    },
+    {
+        "name":"Minh Anh",
+        "role":"Bot",
+        "avatar":"assets/members/minhanh.jpg",
+        "description":"Bot độc quyền của Hội người mọi"
+    }
+]

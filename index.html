@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Hội người mọi</title>
+
+    <link rel="icon" href="assets/logo.png" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body>
+    <div class="background"></div>
+
+    <nav>
+      <a href="index.html" class="nav-logo">
+        <i class="fa-solid fa-house"></i>
+        Hội người mọi
+      </a>
+
+      <div class="nav-links">
+        <a href="index.html" class="active">Trang chủ</a>
+
+        <a href="members.html">Thành viên</a>
+
+        <a href="events.html">Sự kiện</a>
+
+        <a href="announce.html">Thông báo</a>
+      </div>
+    </nav>
+
+    <header class="hero" data-aos="fade-up">
+      <img src="assets/logo.png" class="logo" />
+
+      <h1>HỘI NGƯỜI MỌI</h1>
+
+      <p>Bến đỗ giao lưu, học tập và giải trí dành cho tất cả mọi người.</p>
+
+      <div class="hero-buttons">
+        <a
+          href="https://discord.gg/47eMfd63Gc"
+          target="_blank"
+          class="discord-btn"
+        >
+          Tham Gia Discord
+        </a>
+
+        <a href="members.html" class="members-btn"> Thành Viên </a>
+      </div>
+    </header>
+    <section class="latest-announcements" data-aos="fade-up">
+      <h2>Thông báo mới nhất</h2>
+
+      <div id="latestAnnouncements"></div>
+    </section>
+    <section class="latest-events" data-aos="fade-up">
+      <h2>Sự kiện mới nhất</h2>
+
+      <div id="latestEvents"></div>
+    </section>
+    <section class="about" data-aos="fade-up">
+      <h2>Về Hội người mọi</h2>
+
+      <p>
+        Hội người mọi là nhóm những người bạn được thành lập khi bọn mình vẫn
+        còn học cấp 2, đã từng trải qua nhiều thời kì với các tên gọi khác nhau
+        như OCT (On Chan Team), Chợ đầu mối hoa quả,... và mới nhất là Hội người
+        mọi. Ban đầu mục đích là dành riêng cho các thành viên trong nhóm, sau
+        đó đã thay đổi thành 1 cộng đồng do đã mở rộng ra các lĩnh vực khác
+        nhau, nổi bật nhất là lĩnh vực Game và đam mê chơi xe cộ
+      </p>
+    </section>
+    <section class="contact-section" data-aos="fade-up">
+      <h2>Liên hệ</h2>
+
+      <div class="contact-grid">
+        <a
+          href="https://discord.gg/47eMfd63Gc"
+          target="_blank"
+          class="contact-card discord-card fa-brands fa-discord"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Discord
+        </a>
+
+        <a
+          href="https://www.facebook.com/profile.php?id=61577441744612"
+          target="_blank"
+          class="contact-card facebook-card fa-brands fa-facebook"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          Facebook
+        </a>
+
+        <a
+          href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fonlyfans.shg%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExaHR2V0RGZWloVlBlQnZ0aXNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR7YgB_trmu4_h4xoVcGj0dVCBpgkjIiysR--vMYhF-Ll5J0IhAJh4uapSw8ZQ_aem_cNRYz2DIi3PIF2P8wIlThQ&h=AUBTuubvvInESW5ROYW0-VGWkcDPX09rUycDoqxpw-o5zM4c-e_qattfOKNT1lOT5FnNsrgeamTaf7NlCqNhRbU05VTEfkx5DtuSqiLYK5fOAgNH_ORsOR22AdHKDcSSzkVjjtm5bYTTOmrC8Pbt"
+          target="_blank"
+          class="contact-card instagram-card fa-brands fa-instagram"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          Instagram
+        </a>
+      </div>
+    </section>
+
+    <footer>© 2026 Hội người mọi</footer>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 800,
+
+        once: true,
+
+        offset: 100,
+      });
+    </script>
+  </body>
+</html>
