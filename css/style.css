@@ -176,7 +176,7 @@ nav {
 
   transition: all 0.3s ease;
 
-  margin:0 auto;
+  margin: 0 auto;
 }
 
 .discord-btn {
@@ -667,5 +667,11 @@ footer {
     visibility: visible;
 
     transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding-top: 140px;
   }
 }
