@@ -181,11 +181,16 @@ nav {
     #e0aaff
   );
 
-  background-size: 400% 400%;
+  background-size: 200% 200%;
+
+  animation: bgMoveMobile 12s ease infinite;
+  opacity: 0.25;
 
   animation: bgMove 15s ease infinite;
 
   opacity: 0.25;
+
+  will-change: transform;
 }
 
 @keyframes bgMove {
@@ -199,6 +204,18 @@ nav {
 
   100% {
     background-position: 0% 50%;
+  }
+}
+
+@keyframes bgMoveMobile {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.1) rotate(2deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
   }
 }
 
@@ -724,7 +741,7 @@ footer {
 
     overflow: hidden;
   }
-  .mini-card{
+  .mini-card {
     padding: 0 0 15px 0 !important;
   }
   .mini-card img {
@@ -768,6 +785,18 @@ footer {
   .announcements-wrapper {
     padding: 0px !important;
     overflow: hidden;
+  }
+
+  .body {
+    background: #0b1120 !important;
+  }
+  .members-page,
+  .events-page,
+  .announce-page,
+  .about,
+  .latest-events,
+  .latest-announcements {
+    background: transparent !important;
   }
 }
 
