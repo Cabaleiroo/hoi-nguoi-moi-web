@@ -296,11 +296,15 @@ nav {
 }
 
 #eventsContainer {
-  display: grid;
+  display: flex;
 
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  flex-direction: column;
 
-  gap: 30px;
+  gap: 25px;
+
+  max-width: 500px;
+
+  margin: auto;
 }
 
 .event-card {
