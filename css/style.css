@@ -244,6 +244,13 @@ nav {
   flex: 0 0 320px;
 
   width: 320px;
+
+  transition: transform 0.3s ease;
+}
+
+.member-card:hover {
+  transform: translateY(-8px) !important;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
 }
 
 .member-card img {
@@ -313,7 +320,8 @@ nav {
 }
 
 .event-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-8px) !important;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
 }
 
 .event-banner {
@@ -348,6 +356,16 @@ nav {
   color: white;
 
   text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.event-btn:hover {
+  transform: translateY(-2px);
+
+  background: rgba(255, 255, 255, 0.384);
+
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.384);
 }
 
 .announce-page {
