@@ -1,13 +1,80 @@
 [
-    {
-        "title":"Summer Festival",
+  {
+    "title": "Summer Festival",
 
-        "date":"2026-07-15 20:00",
+    "startDate": "2026-07-01T20:00:00",
 
-        "banner":"assets/events/summer.jpg",
+    "endDate": "2026-07-05T23:59:59",
 
-        "description":"Sự kiện mùa hè dành cho toàn bộ thành viên.",
+    "banner": "assets/events/summer.jpg",
 
-        "link":"#"
-    }
+    "description": "Sự kiện offline mùa hè của Hội người mọi",
+
+    "link": "#"
+  },
+  {
+    "title": "Summer Festival",
+
+    "startDate": "2026-07-01 20:00:00",
+
+    "endDate": "2026-07-05 23:59:59",
+
+    "banner": "assets/events/summer.jpg",
+
+    "description": "Sự kiện offline mùa hè của Hội người mọi",
+
+    "link": "#"
+  },
+  {
+    "title": "Summer Festival",
+
+    "startDate": "2026-07-01 20:00:00",
+
+    "endDate": "2026-07-05 23:59:59",
+
+    "banner": "assets/events/summer.jpg",
+
+    "description": "Sự kiện offline mùa hè của Hội người mọi",
+
+    "link": "#"
+  },
+  {
+    "title": "Summer Festival",
+
+    "startDate": "2026-07-01 20:00:00",
+
+    "endDate": "2026-07-05 23:59:59",
+
+    "banner": "assets/events/summer.jpg",
+
+    "description": "Sự kiện offline mùa hè của Hội người mọi",
+
+    "link": "#"
+  },
+  {
+    "title": "Summer Festival",
+
+    "startDate": "2026-07-01 20:00:00",
+
+    "endDate": "2026-07-05 23:59:59",
+
+    "banner": "assets/events/summer.jpg",
+
+    "description": "Sự kiện offline mùa hè của Hội người mọi",
+
+    "link": "#"
+  },
+  {
+    "title": "Summer Festival",
+
+    "startDate": "2026-07-01 20:00:00",
+
+    "endDate": "2026-07-05 23:59:59",
+
+    "banner": "assets/events/summer.jpg",
+
+    "description": "Sự kiện offline mùa hè của Hội người mọi",
+
+    "link": "#"
+  }
 ]

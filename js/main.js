@@ -1,5 +1,35 @@
 console.log("main.js loaded");
 
+function getEventStatus(startDate, endDate) {
+  const now = new Date();
+
+  const start = new Date(startDate);
+
+  const end = new Date(endDate);
+
+  if (now < start) return "upcoming";
+
+  if (now >= start && now <= end) return "ongoing";
+
+  return "finished";
+}
+
+function getCountdown(startDate) {
+  const now = new Date();
+
+  const start = new Date(startDate);
+
+  const diff = start - now;
+
+  if (diff <= 0) return null;
+
+  const days = Math.floor(diff / 86400000);
+
+  const hours = Math.floor((diff % 86400000) / 3600000);
+
+  return `${days} ngày ${hours} giờ`;
+}
+
 async function loadLatestEvents() {
   const response = await fetch("data/events.json");
 
@@ -7,13 +37,34 @@ async function loadLatestEvents() {
 
   console.log(events);
 
-  events.sort((a, b) => new Date(b.date) - new Date(a.date));
+  events.sort((a, b) => new Date(b.startDate) - new Date(a.startDate));
 
-  const latest = events.slice(0, 3);
+  const latest = events.slice(0, 8);
 
   const container = document.getElementById("latestEvents");
 
+  if (!container) return;
+
   latest.forEach((event, index) => {
+    const status = getEventStatus(event.startDate, event.endDate);
+
+    let statusText = "";
+
+    let statusClass = "";
+
+    if (status === "upcoming") {
+      statusText = `⏳ Còn ${getCountdown(event.startDate)}`;
+
+      statusClass = "event-upcoming";
+    } else if (status === "ongoing") {
+      statusText = "🟢 Đang diễn ra";
+
+      statusClass = "event-ongoing";
+    } else {
+      statusText = "🔴 Đã kết thúc";
+
+      statusClass = "event-finished";
+    }
     container.innerHTML += `
 
         <div
@@ -25,7 +76,11 @@ async function loadLatestEvents() {
 
             <h3>${event.title}</h3>
 
-            <p>${event.date}</p>
+            <p>${event.description}</p>
+
+            <p class="${statusClass}">
+                ${statusText}
+            </p>
 
         </div>
 
@@ -49,9 +104,11 @@ async function loadLatestAnnouncements() {
     return new Date(b.date) - new Date(a.date);
   });
 
-  const latest = announcements.slice(0, 3);
+  const latest = announcements.slice(0, 8);
 
   const container = document.getElementById("latestAnnouncements");
+
+  if (!container) return;
 
   latest.forEach((item, index) => {
     container.innerHTML += `
@@ -71,6 +128,10 @@ async function loadLatestAnnouncements() {
                     ${item.title}
 
                 </h3>
+
+                <p>
+                    ${item.content}
+                </p>
 
             </div>
 
@@ -114,3 +175,40 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
     navLinks.classList.remove("active");
   });
 });
+
+function setupHorizontalScroll(containerId, leftId, rightId) {
+  const container = document.getElementById(containerId);
+  const left = document.getElementById(leftId);
+  const right = document.getElementById(rightId);
+
+  if (!container) return;
+
+  const getStep = () => {
+    const card = container.querySelector(".mini-card, .announcement-preview");
+    if (!card) return 345;
+    const cardWidth = card.offsetWidth;
+    const computedStyle = window.getComputedStyle(container);
+    const gap = parseInt(computedStyle.gap) || 25;
+    return cardWidth + gap;
+  };
+
+  const scrollToNext = (dir) => {
+    const step = getStep();
+
+    container.scrollTo({
+      left: container.scrollLeft + dir * step,
+      behavior: "smooth",
+    });
+  };
+
+  left?.addEventListener("click", () => scrollToNext(-1));
+  right?.addEventListener("click", () => scrollToNext(1));
+}
+
+setupHorizontalScroll("latestEvents", "eventLeft", "eventRight");
+
+setupHorizontalScroll(
+  "latestAnnouncements",
+  "announcementLeft",
+  "announcementRight",
+);

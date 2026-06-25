@@ -28,7 +28,7 @@
         Hội người mọi
       </a>
 
-      <button class="menu-toggle">
+      <button class="menu-toggle" title="Mở menu">
         <i class="fa-solid fa-bars"></i>
       </button>
 
@@ -48,29 +48,45 @@
 
       <h1>HỘI NGƯỜI MỌI</h1>
 
-      <p>Bến đỗ giao lưu, học tập và giải trí dành cho tất cả mọi người.</p>
-
-      <div class="hero-buttons">
-        <a
-          href="https://discord.gg/47eMfd63Gc"
-          target="_blank"
-          class="discord-btn"
-        >
-          Tham Gia Discord
-        </a>
-
-        <a href="members.html" class="members-btn"> Thành Viên </a>
-      </div>
+      <p>Đây là trang web chính thức của Hội người mọi và MOI Studio</p>
     </header>
     <section class="latest-announcements" data-aos="fade-up">
-      <h2>Thông báo mới nhất</h2>
+      <div class="section-header">
+        <h2>Thông báo mới nhất</h2>
 
-      <div id="latestAnnouncements"></div>
+        <a href="announce.html" class="view-more"> Xem thêm → </a>
+      </div>
+
+      <div class="announcements-wrapper">
+        <button class="scroll-btn left" data-aos="fade-up" id="announcementLeft">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div id="latestAnnouncements" class="horizontal-scroll"></div>
+
+        <button class="scroll-btn right" data-aos="fade-up" id="announcementRight">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
     </section>
     <section class="latest-events" data-aos="fade-up">
-      <h2>Sự kiện mới nhất</h2>
+      <div class="section-header">
+        <h2>Sự kiện mới nhất</h2>
 
-      <div id="latestEvents"></div>
+        <a href="events.html" class="view-more"> Xem thêm → </a>
+      </div>
+
+      <div class="events-wrapper">
+        <button class="scroll-btn left" data-aos="fade-up" id="eventLeft">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+
+        <div id="latestEvents" class="horizontal-scroll"></div>
+
+        <button class="scroll-btn right" data-aos="fade-up" id="eventRight">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
     </section>
     <section class="about" data-aos="fade-up">
       <h2>Về Hội người mọi</h2>
