@@ -726,7 +726,7 @@ footer {
   .horizontal-scroll::after {
     content: "";
     display: block;
-    flex: 0 0 5px;
+    flex: 0 0 2px;
     max-width: 20px;
     visibility: hidden;
   }
