@@ -71,7 +71,7 @@ nav {
 }
 
 .hero {
-  min-height: 100vh;
+  min-height: 61vh;
 
   display: flex;
 
@@ -710,7 +710,17 @@ footer {
   }
 
   .scroll-btn {
-    display: none;
+    display: none !important;
+  }
+  .horizontal-scroll {
+    padding: 25px 20px; 
+    margin: -25px -20px;
+    scroll-padding-left: 20px;
+  }
+  .events-wrapper,
+  .announcements-wrapper {
+    padding: 0px 20px;
+    overflow: hidden;
   }
 }
 
