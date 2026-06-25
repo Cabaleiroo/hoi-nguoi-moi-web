@@ -537,10 +537,12 @@ section h2 {
 .announcement-preview:hover,
 .member-card:hover,
 .announce-card:hover,
-.event-card:hover {
+.event-card:hover,
+.contact-card:hover {
   transform: translateY(-4px) scale(1.02) !important;
   z-index: 4;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease !important;
 }
 
 .mini-card img {
@@ -603,11 +605,11 @@ section h2 {
 
 .member-card,
 .announce-card,
-.event-card {
-  transition:
-    transform 0.3s ease,
-    opacity 0.3s ease,
-    box-shadow 0.3s ease !important;
+.event-card,
+.contact-card {
+  transition-property: transform, opacity, box-shadow;
+  transition-duration: 0.3s, 1s, 0.3s;
+  transition-timing-function: ease;
 }
 
 .contact-section {
