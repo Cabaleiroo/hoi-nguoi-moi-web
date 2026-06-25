@@ -704,7 +704,7 @@ footer {
     gap: 10px;
   }
   .mini-card {
-    flex: 0 0 260px;
+    flex: 0 0 130px;
 
     width: 260px;
   }
