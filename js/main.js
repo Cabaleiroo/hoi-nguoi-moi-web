@@ -70,7 +70,7 @@ async function loadLatestEvents() {
         <div
             class="mini-card"
             data-aos="fade-up"
-            data-aos-delay="${index * 150}">
+            data-aos-delay="${index * 400}">
 
             <img src="${event.banner}">
 
@@ -115,7 +115,7 @@ async function loadLatestAnnouncements() {
 
             <div class="announcement-preview"
             data-aos="fade-up"
-            data-aos-delay="${index * 150}">
+            data-aos-delay="${index * 400}">
 
                 <span>
 
