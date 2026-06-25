@@ -86,7 +86,9 @@ async function loadLatestEvents() {
 
     `;
   });
-  AOS.refresh();
+  setTimeout(() => {
+    AOS.refresh();
+  }, 100);
 }
 
 loadLatestEvents();
@@ -137,7 +139,9 @@ async function loadLatestAnnouncements() {
 
         `;
   });
-  AOS.refresh();
+  setTimeout(() => {
+    AOS.refresh();
+  }, 100);
 }
 
 loadLatestAnnouncements();
