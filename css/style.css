@@ -713,13 +713,27 @@ footer {
     display: none !important;
   }
   .horizontal-scroll {
-    padding: 25px 20px; 
-    margin: -25px -20px;
-    scroll-padding-left: 20px;
+    margin: 0 !important;
+
+    padding: 15px 0px !important;
+
+    gap: 20px !important;
+
+    -webkit-overflow-scrolling: touch;
   }
+
+  .horizontal-scroll::before,
+  .horizontal-scroll::after {
+    content: "";
+    display: block;
+    flex: 0 0 20px;
+    max-width: 20px;
+    visibility: hidden;
+  }
+
   .events-wrapper,
   .announcements-wrapper {
-    padding: 0px 20px;
+    padding: 0px !important;
     overflow: hidden;
   }
 }
