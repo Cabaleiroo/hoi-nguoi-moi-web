@@ -703,10 +703,18 @@ footer {
 
     gap: 10px;
   }
-  .mini-card {
-    flex: 0 0 130px;
+  .mini-card,
+  .announcement-preview {
+    flex: 0 0 78vw !important;
 
-    width: 130px;
+    width: 78vw !important;
+
+    max-width: 280px;
+
+    padding: 15px !important;
+  }
+  .mini-card img{
+    height: 140px !important;
   }
 
   .scroll-btn {
