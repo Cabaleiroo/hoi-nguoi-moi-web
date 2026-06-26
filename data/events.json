@@ -11,5 +11,18 @@
     "description": "Sự kiện offline mùa hè của Hội người mọi",
 
     "link": "#"
+  },
+  {
+    "title": "Khai mở The Harvest phiên bản Discord Bot Game",
+
+    "startDate": "2026-05-26T21:00:00",
+
+    "endDate": "2026-05-26T23:59:59",
+
+    "banner": "assets/events/harvest.jpg",
+
+    "description": "Discord bot game dòng RPG được chuyển thể từ series modpack Minecraft cùng tên trước đó của Hội người mọi",
+
+    "link": "#"
   }
 ]
