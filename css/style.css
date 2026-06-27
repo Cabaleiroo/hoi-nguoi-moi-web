@@ -891,9 +891,21 @@ footer {
   }
   .nav-dropdown.mobile-open .dropdown-menu {
     max-height: 300px; /* Mở rộng không gian thả xuống */
+    opacity: 1 !important;
+    visibility: visible !important;
+    overflow: visible !important;  /* Cho phép nội dung hiển thị ra ngoài */
+    padding: 10px 0 !important;   /* Tạo khoảng cách đệm cho dễ bấm */
+    background: #7c1dbb; /* Thêm nền nhẹ để phân biệt với menu chính */
+    border-radius: 8px;
+    margin-top: 8px;
   }
   .nav-dropdown.mobile-open .dropdown-toggle i {
     transform: rotate(180deg);
+    padding: 12px 25px !important;
+    font-size: 0.95rem !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+    display: block !important;
+    width: 100%;
   }
   /* ĐOẠN CSS RIÊNG BIỆT DÀNH CHO TRANG MINECRAFT - KHÔNG ẢNH HƯỞNG TRANG CHỦ */
   #modpackContainer {
