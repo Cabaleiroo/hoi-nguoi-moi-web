@@ -885,7 +885,7 @@ footer {
     opacity: 1 !important;
     visibility: visible !important;
     overflow: visible !important;
-    padding: 10px 0 !important;
+    padding: 5px 0 !important;
     background: #7c1dbb !important; /* Nền tím phân biệt menu con */
     border-radius: 8px !important;
     margin-top: 8px !important;
@@ -893,11 +893,12 @@ footer {
 
   /* Xử lý hiển thị chữ của các trang con bên trong */
   .nav-dropdown .dropdown-menu a {
-    padding: 12px 25px !important;
-    font-size: 0.95rem !important;
+    padding: 10px 20px !important;
+    font-size: 0.9rem !important;
     color: rgba(255, 255, 255, 0.9) !important;
     display: block !important;
     width: 100% !important;
+    text-align: left !important;
   }
 
   .nav-dropdown.mobile-open .dropdown-toggle i {
