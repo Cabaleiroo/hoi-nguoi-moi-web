@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Harvest: Minecraft Modpack - Hội người mọi</title>
+    <link rel="icon" href="assets/logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <div class="background"></div>
+    <!-- Chèn NAV Đã sửa đổi ở Phần 2 vào đây -->
+
+    <nav>
+      <a href="index.html" class="nav-logo">
+        <i class="fa-solid fa-house"></i>
+        Hội người mọi
+      </a>
+
+      <button class="menu-toggle" title="Mở menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="nav-links">
+        <a href="index.html">Trang chủ</a>
+        <a href="members.html">Thành viên</a>
+        <a href="events.html">Sự kiện</a>
+        <a href="announce.html">Thông báo</a>
+
+        <!-- Menu thả xuống dành cho The Harvest -->
+        <div class="nav-dropdown">
+          <a href="javascript:void(0);" class="dropdown-toggle"
+            >The Harvest
+            <i
+              class="fa-solid fa-chevron-down"
+              style="font-size: 0.8rem; margin-left: 5px"
+            ></i
+          ></a>
+          <div class="dropdown-menu">
+            <a href="harvest-game.html">Game Edition</a>
+            <a href="harvest-minecraft.html">Minecraft Modpack Edition</a>
+            <a href="harvest-bot.html">Discord Bot Game Edition</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero" data-aos="fade-up" style="min-height: 45vh">
+      <img
+        src="assets/events/summer.jpg"
+        class="logo"
+        style="
+          border-radius: 20px;
+          width: 140px;
+          height: 140px;
+          object-fit: cover;
+        "
+      />
+      <h1>THE HARVEST: MINECRAFT MODPACK</h1>
+      <p>
+        Series modpack nhập vai sinh tồn nguyên bản mở đầu cho cốt
+        truyện của The Harvest
+      </p>
+    </header>
+
+    <!-- Khối giới thiệu đặc thù Modpack -->
+    <section
+      class="harvest-overview-section"
+      data-aos="fade-up"
+      style="padding-bottom: 20px"
+    >
+      <div class="harvest-intro-container">
+        <div class="harvest-text-block">
+          <h3>Minecraft phiên bản mở rộng theo chủ đề The Harvest</h3>
+          <p>
+            Trải nghiệm các phiên bản Minecraft được tinh chỉnh chuyên sâu với hơn
+            100 mods mở rộng cho mỗi modpack, tụ hội đủ loại yếu tố kỳ ảo nhưng cũng không thiếu phần u ám
+          </p>
+        </div>
+      </div>
+
+      <!-- Danh sách tải file Modpack -->
+      <h3 style="margin: 40px 0 20px; color: #e0aaff">
+        <i class="fa-solid fa-download"></i> Các phiên bản Modpack
+      </h3>
+      <div id="modpackContainer">
+        <!-- Tái sử dụng Grid layout có sẵn -->
+
+        <div
+          class="member-card harvest-minecraft-card"
+          style="flex: unset; width: 100%; transform: none"
+        >
+          <img
+            src="assets/hvmc/hvmcbanners/harvest.png"
+            style="border-radius: 12px; width: 100%; height: 140px"
+          />
+          <h3>The Harvest</h3>
+          <span style="background: #22c55e; width: fit-content; margin: 0 auto 15px;">Forge - 1.20.1</span>
+          <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 15px">
+            738MB
+          </p>
+          <a
+            href=""
+            download="Harvest.zip"
+            target="_blank"
+            class="event-btn"
+            style="margin-top: 0; width: 100%"
+            >Tải Modpack (.zip)</a
+          >
+        </div>
+        <div
+          class="member-card harvest-minecraft-card"
+          style="flex: unset; width: 100%; transform: none"
+        >
+          <img
+            src="assets/hvmc/hvmcbanners/harvest2.png"
+            style="border-radius: 12px; width: 100%; height: 140px"
+          />
+          <h3>The Harvest 2: Into The Future</h3>
+          <span style="background: #22c55e; width: fit-content; margin: 0 auto 15px;">Forge - 1.20.1</span>
+          <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 15px">
+            373MB
+          </p>
+          <a
+            href=""
+            download="Harvest 2 Into The Future.zip"
+            target="_blank"
+            class="event-btn"
+            style="margin-top: 0; width: 100%"
+            >Tải Modpack (.zip)</a
+          >
+        </div>
+        <div
+          class="member-card harvest-minecraft-card"
+          style="flex: unset; width: 100%; transform: none"
+        >
+          <img
+            src="assets/hvmc/hvmcbanners/harvest3.png"
+            style="border-radius: 12px; width: 100%; height: 140px"
+          />
+          <h3>The Harvest 3: New Dimension</h3>
+          <span style="background: #22c55e; width: fit-content; margin: 0 auto 15px;">Forge - 1.20.1</span>
+          <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 15px">
+            408MB
+          </p>
+          <a
+            href=""
+            download="Harvest 3 New Dimension.zip"
+            target="_blank"
+            class="event-btn"
+            style="margin-top: 0; width: 100%"
+            >Tải Modpack (.zip)</a
+          >
+        </div>
+        <div
+          class="member-card harvest-minecraft-card"
+          style="flex: unset; width: 100%; transform: none"
+        >
+          <img
+            src="assets/hvmc/hvmcbanners/harvestbackrooms.png"
+            style="border-radius: 12px; width: 100%; height: 140px"
+          />
+          <h3>The Harvest Side Story: Backrooms</h3>
+          <span style="background: #22c55e; width: fit-content; margin: 0 auto 15px;">Fabric - 1.20.1</span>
+          <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 15px">
+            179MB
+          </p>
+          <a
+            href=""
+            download="Harvest Side Story Backrooms.zip"
+            target="_blank"
+            class="event-btn"
+            style="margin-top: 0; width: 100%"
+            >Tải Modpack (.zip)</a
+          >
+        </div>
+        <div
+          class="member-card "
+          style="flex: unset; width: 100%; transform: none"
+        >
+          <img
+            src="assets/hvmc/hvmcbanners/harvestsea.png"
+            style="border-radius: 12px; width: 100%; height: 140px"
+          />
+          <h3>The Harvest Side Story: Out Of The Sea</h3>
+          <span style="background: #22c55e; width: fit-content; margin: 0 auto 15px;">Forge - 1.21.5</span>
+          <p style="font-size: 0.9rem; opacity: 0.7; margin-bottom: 15px">
+            47MB
+          </p>
+          <a
+            href=""
+            download="Harvest Side Story Out Of The Sea.zip"
+            target="_blank"
+            class="event-btn"
+            style="margin-top: 0; width: 100%"
+            >Tải Modpack (.zip)</a
+          >
+        </div>
+      </div>
+
+      <div class="roadmap-container" style="margin-top: 50px">
+        <h3><i class="fa-solid fa-timeline"></i> Nhật ký cập nhật Modpack</h3>
+        <div class="timeline-wrapper" id="mcRoadmapTimeline"></div>
+      </div>
+    </section>
+
+    <section class="latest-events" data-aos="fade-up">
+      <div class="section-header"><h2>Sự kiện liên quan</h2></div>
+      <div class="events-wrapper">
+        <button class="scroll-btn left" id="hEventLeft">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div id="harvestEventsPage" class="horizontal-scroll"></div>
+        <button class="scroll-btn right" id="hEventRight">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <section
+      class="latest-announcements"
+      data-aos="fade-up"
+      style="padding-bottom: 100px"
+    >
+      <div class="section-header"><h2>Thông báo vận hành</h2></div>
+      <div class="announcements-wrapper">
+        <button class="scroll-btn left" id="hAnnounceLeft">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <div id="harvestAnnouncementsPage" class="horizontal-scroll"></div>
+        <button class="scroll-btn right" id="hAnnounceRight">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+      </div>
+    </section>
+
+    <footer>© 2026 Hội người mọi</footer>
+    <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 800, once: false, offset: 100 });
+    </script>
+  </body>
+</html>

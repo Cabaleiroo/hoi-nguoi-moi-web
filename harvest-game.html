@@ -2,23 +2,19 @@
 <html lang="vi">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>Thông báo | Hội người mọi</title>
-
+    <title>The Harvest: Game Edition - Hội người mọi</title>
+    <link rel="icon" href="assets/logo.png" />
     <link rel="stylesheet" href="css/style.css" />
-
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
-
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
-
   <body>
     <div class="background"></div>
+    <!-- Chèn NAV Đã sửa đổi ở Phần 2 vào đây -->
 
     <nav>
       <a href="index.html" class="nav-logo">
@@ -54,24 +50,42 @@
       </div>
     </nav>
 
-    <section class="announce-page" data-aos="fade-up">
-      <h1>Thông báo</h1>
+    <header class="hero" data-aos="fade-up" style="min-height: 80vh">
+      <i
+        class="fa-solid fa-screwdriver-wrench"
+        style="
+          font-size: 4rem;
+          color: #fbbf24;
+          margin-bottom: 20px;
+          animation: glow 1.5s infinite alternate;
+        "
+      ></i>
+      <h1>THE HARVEST: GAME EDITION</h1>
+      <h2 style="color: #9d4edd; margin: 15px 0">COMING SOON</h2>
+      <p>
+        Dự án game độc lập (Standalone Game) đang được MOI Studio lên ý tưởng và
+        xây dựng nền móng cốt lõi.
+      </p>
+    </header>
 
-      <div id="announceContainer"></div>
+    <section class="harvest-overview-section" data-aos="fade-up">
+      <div class="roadmap-container">
+        <h3>
+          <i class="fa-solid fa-timeline"></i> Lộ trình phát triển dự kiến
+        </h3>
+        <div class="timeline-wrapper" id="gameRoadmapTimeline"></div>
+      </div>
     </section>
 
-    <script src="js/announce.js"></script>
+    <!-- Khu vực nạp dữ liệu rỗng tự động -->
+    <div id="harvestEventsPage" style="display: none"></div>
+    <div id="harvestAnnouncementsPage" style="display: none"></div>
+
+    <footer>© 2026 Hội người mọi</footer>
     <script src="js/main.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-
     <script>
-      AOS.init({
-        duration: 800,
-
-        once: false,
-
-        offset: 100,
-      });
+      AOS.init({ duration: 800, once: false, offset: 100 });
     </script>
   </body>
 </html>

@@ -33,13 +33,26 @@
       </button>
 
       <div class="nav-links">
-        <a href="index.html" class="active">Trang chủ</a>
-
+        <a href="index.html">Trang chủ</a>
         <a href="members.html">Thành viên</a>
-
         <a href="events.html">Sự kiện</a>
-
         <a href="announce.html">Thông báo</a>
+
+        <!-- Menu thả xuống dành cho The Harvest -->
+        <div class="nav-dropdown">
+          <a href="javascript:void(0);" class="dropdown-toggle"
+            >The Harvest
+            <i
+              class="fa-solid fa-chevron-down"
+              style="font-size: 0.8rem; margin-left: 5px"
+            ></i
+          ></a>
+          <div class="dropdown-menu">
+            <a href="harvest-game.html">Game Edition</a>
+            <a href="harvest-minecraft.html">Minecraft Modpack Edition</a>
+            <a href="harvest-bot.html">Discord Bot Game Edition</a>
+          </div>
+        </div>
       </div>
     </nav>
 
@@ -48,7 +61,7 @@
 
       <h1>HỘI NGƯỜI MỌI</h1>
 
-      <p>Đây là trang web chính thức của Hội người mọi và MOI Studio</p>
+      <p>Đây là website chính thức của Hội người mọi và MOI Studio</p>
     </header>
     <section class="latest-announcements" data-aos="fade-up">
       <div class="section-header">
@@ -58,13 +71,21 @@
       </div>
 
       <div class="announcements-wrapper">
-        <button class="scroll-btn left" data-aos="fade-up" id="announcementLeft">
+        <button
+          class="scroll-btn left"
+          data-aos="fade-up"
+          id="announcementLeft"
+        >
           <i class="fa-solid fa-chevron-left"></i>
         </button>
 
         <div id="latestAnnouncements" class="horizontal-scroll"></div>
 
-        <button class="scroll-btn right" data-aos="fade-up" id="announcementRight">
+        <button
+          class="scroll-btn right"
+          data-aos="fade-up"
+          id="announcementRight"
+        >
           <i class="fa-solid fa-chevron-right"></i>
         </button>
       </div>
@@ -88,17 +109,42 @@
         </button>
       </div>
     </section>
-    <section class="about" data-aos="fade-up">
-      <h2>Về Hội người mọi</h2>
+    <section class="harvest-overview-section" data-aos="fade-up">
+      <div class="section-header">
+        <h2>Dự án: The Harvest</h2>
+        <a href="harvest.html" class="view-more">Xem chi tiết →</a>
+      </div>
 
-      <p>
-        Hội người mọi là nhóm những người bạn được thành lập khi bọn mình vẫn
-        còn học cấp 2, đã từng trải qua nhiều thời kì với các tên gọi khác nhau
-        như OCT (On Chan Team), Chợ đầu mối hoa quả,... và mới nhất là Hội người
-        mọi. Ban đầu mục đích là dành riêng cho các thành viên trong nhóm, sau
-        đó đã thay đổi thành 1 cộng đồng do đã mở rộng ra các lĩnh vực khác
-        nhau, nổi bật nhất là lĩnh vực Game và đam mê chơi xe cộ
-      </p>
+      <div class="harvest-intro-container">
+        <div class="harvest-text-block">
+          <h3>Trải nghiệm Thế giới RPG độc đáo ngay trên Discord</h3>
+          <p>
+            The Harvest là tiêu đề của 1 series game hoặc mod độc quyền của Hội
+            người mọi, biến các tựa game thành phiên bản mở rộng theo chủ đề gặt
+            hái - harvest. The Harvest xuất hiện lần đầu vào khoảng tháng
+            9/2025, và tựa game mà nó cập bến đầu tiên là Minecraft, dưới dạng
+            các modpack mở rộng. Hiện nay, nó đã được chuyển thể sang dạng
+            Discord Bot Game với các tính năng cơ bản của thể loại RPG.
+          </p>
+
+          <div class="gameplay-tags">
+            <span><i class="fa-solid fa-gamepad"></i> Discord Bot</span>
+            <span
+              ><i class="fa-solid fa-wand-magic-sparkles"></i> RPG Nhập
+              vai</span
+            >
+          </div>
+        </div>
+
+        <div class="harvest-gallery-grid">
+          <div class="gallery-item">
+            <img src="assets/events/harvest.jpg" alt="Review 1" />
+          </div>
+          <div class="gallery-item">
+            <img src="assets/events/summer.jpg" alt="Review 2" />
+          </div>
+        </div>
+      </div>
     </section>
     <section class="contact-section" data-aos="fade-up">
       <h2>Liên hệ</h2>
