@@ -858,51 +858,71 @@ footer {
   /* SỬA LẠI ĐOẠN NAV DROPDOWN TRÊN MOBILE */
   .nav-dropdown {
     width: 100%;
+    display: block !important;
     text-align: left;
+    position: relative;
   }
 
   .dropdown-menu {
-    position: relative !important;
-    top: 0 !important;
-    left: 0 !important;
-    transform: none !important;
-    width: 100% !important;
-    background: rgba(255, 255, 255, 0.03) !important;
-    border: none !important;
+    position: absolute !important; /* Chuyển lại thành absolute để kiểm soát vị trí tự do */
+    top: 100% !important; /* Nằm ngay dưới đáy của nút The Harvest */
+    right: 0 !important;   /* Căn sát lề phải của menu chính */
+    left: auto !important;  /* Bỏ lề trái để menu tự động tràn và mở rộng về phía BÊN TRÁI */
+    transform: none !important; /* Xóa bỏ hoàn toàn lệnh căn giữa dịch chuyển của PC */
+    
+    /* Thu hẹp chiều rộng menu con lại một chút để nằm vừa khít bên trong khối nav-links (220px) */
+    width: 190px !important; 
+    
+    background: rgba(11, 17, 32, 0.98) !important; /* Nền tối đậm để nhìn rõ chữ */
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    border-radius: 10px !important;
     padding: 0 !important;
     margin-top: 5px !important;
-    max-height: 0 !important; /* Mặc định ẩn bằng chiều cao 0 */
+    
+    /* Hiệu ứng ẩn mặc định */
+    max-height: 0 !important;
     overflow: hidden !important;
     opacity: 0 !important;
     visibility: hidden !important;
     transition: all 0.3s ease-out !important;
-    box-shadow: none !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5) !important;
+    z-index: 1000 !important;
   }
 
   /* ĐẢM BẢO HIỆN DROPDOWN KHI ĐƯỢC BẤM TRÊN MOBILE */
   .nav-dropdown.mobile-open .dropdown-menu {
-    max-height: 300px !important; /* Bung chiều cao chứa các mục con */
+    max-height: 250px !important; /* Bung chiều cao vừa đủ cho 3 trang con */
     opacity: 1 !important;
     visibility: visible !important;
     overflow: visible !important;
-    padding: 5px 0 !important;
-    background: #7c1dbb !important; /* Nền tím phân biệt menu con */
-    border-radius: 8px !important;
-    margin-top: 8px !important;
+    padding: 8px 0 !important;
   }
 
   /* Xử lý hiển thị chữ của các trang con bên trong */
   .nav-dropdown .dropdown-menu a {
-    padding: 10px 20px !important;
-    font-size: 0.9rem !important;
-    color: rgba(255, 255, 255, 0.9) !important;
+    padding: 10px 15px !important;
+    font-size: 0.88rem !important; /* Chữ nhỏ hơn một chút cho tinh tế */
+    color: rgba(255, 255, 255, 0.85) !important;
     display: block !important;
     width: 100% !important;
-    text-align: left !important;
+    text-align: left !important; /* Chữ luôn canh đều bên trái */
+  }
+
+  .nav-dropdown .dropdown-menu a:hover {
+    background: rgba(124, 29, 187, 0.4) !important;
+    color: white !important;
   }
 
   .nav-dropdown.mobile-open .dropdown-toggle i {
     transform: rotate(180deg); /* Xoay mũi tên lên khi mở */
+  }
+
+  .dropdown-toggle {
+    display: flex !important;
+    justify-content: space-between; /* Đẩy chữ sang trái, mũi tên sang phải kịch kim */
+    align-items: center;
+    width: 100%;
+    white-space: nowrap; /* BẮT BUỘC: Ép chữ không bao giờ được tự xuống dòng */
   }
 
   /* ĐOẠN RESPONSIVE CHO MINECRAFT CARD TRÊN MOBILE */
